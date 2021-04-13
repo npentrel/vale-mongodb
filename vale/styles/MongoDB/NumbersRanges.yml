@@ -6,4 +6,4 @@ ignorecase: true
 level: error
 nonword: true
 tokens:
-  - '(\b(\d*)–(\d*)\b)'
+  - '(\b(\d{1,})–(\d{1,})\b)'
