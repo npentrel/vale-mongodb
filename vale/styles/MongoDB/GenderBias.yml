@@ -1,3 +1,5 @@
+# Based on https://github.com/errata-ai/proselint/blob/master/proselint/GenderBias.yml
+
 extends: substitution
 message: "Consider using '%s' instead of '%s'."
 ignorecase: true
