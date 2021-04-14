@@ -6,3 +6,4 @@ ignorecase: true
 tokens:
   - he/she
   - s/he
+  - \(s\)he

@@ -1,0 +1,7 @@
+# Based on: https://gitlab.com/gitlab-org/gitlab/-/blob/master/doc/.vale/gitlab/Repetition.yml
+extends: repetition
+message: '"%s" is repeated.'
+level: error
+alpha: true
+tokens:
+  - '[^\s]+'

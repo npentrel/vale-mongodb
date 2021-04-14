@@ -83,7 +83,7 @@ swap:
   lower-case: lowercase
   lower-case: lowercase
   make sure: ensure
-  master: primary
+  master: primary, secondary, accomplish
   matrices: matrixes
   meta-data: metadata
   name space: namespace
