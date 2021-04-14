@@ -1,0 +1,14 @@
+extends: substitution
+message: "Use '%s' instead of '%s'."
+link: 'https://docs.mongodb.com/meta/style-guide/terminology/general-term-guidelines/avoid-obscure-words/'
+level: suggestion
+ignorecase: true
+action:
+  name: replace
+swap:
+  e.g.: for example, such as
+  etc: and so on
+  i.e.: that is
+  as per: according to, by way of
+  via: through, by
+  vs.: versus

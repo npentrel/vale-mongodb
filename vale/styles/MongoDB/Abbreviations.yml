@@ -40,6 +40,8 @@ exceptions:
   - IP
   - JSON
   - KB
+  - Kbps
+  - KBps
   - kHz
   - KMS
   - LAN
@@ -58,6 +60,7 @@ exceptions:
   - RAM
   - REST
   - ROM
+  - SaaS
   - SGML
   - SMTP
   - SQL

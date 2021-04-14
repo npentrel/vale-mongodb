@@ -1,0 +1,20 @@
+extends: existence
+message: "Avoid first-person pronouns such as '%s'."
+link: 'https://docs.mongodb.com/meta/style-guide/writing/write-to-the-user/#write-to-the-user'
+ignorecase: true
+level: warning
+nonword: true
+tokens:
+  - (?:^|\s)I\s
+  - (?:^|\s)I,\s
+  - \bI'm\b
+  - \bI've\b
+  - \bme\b
+  - \bmy\b
+  - \bmine\b
+  - (?:^|\s)We\s
+  - (?:^|\s)We,\s
+  - \bWe're\b
+  - \bWe've\b
+  - \bus\b
+  - \bour\b
