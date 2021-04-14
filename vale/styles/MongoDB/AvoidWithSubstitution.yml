@@ -19,6 +19,7 @@ swap:
   backward: backwards
   bad: serious
   be sure: ensure or verify
+  blacklist(?:ed|ing)?: denylist
   boolean: Boolean
   bottom left: lower left
   bottom right: lower right
@@ -143,6 +144,7 @@ swap:
   user: customer
   utilization: usage
   utilize: use
+  whilelist: allowlist
   whitepaper: white paper
   wi-fi: Wi-Fi
   WiFi: Wi-Fi
@@ -153,3 +155,16 @@ swap:
   write only: write-only
   wrong: incorrect/inconsistent
   zeroes: zeros
+  "node[.]?js": Node.js
+  "Post?gr?e(?:SQL)": PostgreSQL
+  "java[ -]?scripts?": JavaScript
+  debian: Debian
+  fedora: Fedora
+  homebrew: Homebrew
+  Kubeadm: kubeadm
+  Kubectl: kubectl
+  Kubelet: kubelet
+  kubernetes: Kubernetes
+  Kube Controller Manager: kube-controller-Manager
+  Kube Proxy: kube-proxy
+  Kube Scheduler: kube-scheduler
