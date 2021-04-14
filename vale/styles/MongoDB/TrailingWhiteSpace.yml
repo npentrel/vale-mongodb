@@ -1,0 +1,6 @@
+extends: existence
+message: "Remove trailing whitespace."
+level: suggestion
+nonword: true
+tokens:
+  - '[ \t]+$'

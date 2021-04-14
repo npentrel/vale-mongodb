@@ -6,9 +6,10 @@ ignorecase: true
 action:
   name: replace
 swap:
-  e.g.: for example, such as
+  '\b(?:eg|e\.g\.)[\s,]': for example, such as
   etc: and so on
-  i.e.: that is
+  '\b(?:ie|i\.e\.)[\s,]': that is
   as per: according to, by way of
   via: through, by
-  vs.: versus
+  '\b(?:vs\.)[\s,]': versus
+  ergo: therefore

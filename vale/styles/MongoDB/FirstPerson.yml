@@ -17,4 +17,5 @@ tokens:
   - \bWe're\b
   - \bWe've\b
   - \bus\b
-  - \bour\b
+  - \bours?\b
+  - let's
