@@ -1,0 +1,3 @@
+#! /bin/bash
+
+vale $(git diff --name-only $1)
