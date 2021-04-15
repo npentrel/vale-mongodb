@@ -1,3 +1,4 @@
 #! /bin/bash
 
 vale $(git diff --name-only $1)
+./whitespace-check $(git diff --name-only $1)

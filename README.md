@@ -25,9 +25,11 @@ The goal of this project is to provide a helpful style guide adherance checker.
    ln -s $(pwd)/vale /path/to/docs/folder/
    ln -s $(pwd)/.vale.ini /path/to/docs/folder/
    ln -s $(pwd)/vale-check /path/to/docs/folder/
+   ln -s $(pwd)/whitespace-check /path/to/docs/folder/
    # example: ln -s $(pwd)/vale /Users/naomi/coding/docs/
    # example: ln -s $(pwd)/.vale.ini /Users/naomi/coding/docs/
    # example: ln -s $(pwd)/vale-check /Users/naomi/coding/docs/
+   # example: ln -s $(pwd)/whitespace-check /Users/naomi/coding/docs/
    ```
 4. To ensure these symlinks do not accidentally get added to git add run:
    ```sh
@@ -84,8 +86,10 @@ See [Usage](https://github.com/errata-ai/vale/#usage) for more information.
   <dd>The vale configuration file.</dd>
 
   <dt><a href="https://github.com/npentrel/vale-mongodb/blob/main/vale-check"><code>/vale-check</code></a></dt>
-  <dd>A wrapper script that allows you to run vale agains recently changed files in git.</dd>
+  <dd>A wrapper script that allows you to run vale and a whitespace-check agains recently changed files in git.</dd>
 
+  <dt><a href="https://github.com/npentrel/vale-mongodb/blob/main/whitespace-check"><code>/whitespace-check</code></a></dt>
+  <dd>A script that checks for whitespace issues.</dd>
 </dl>
 
 ## Credits
