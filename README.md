@@ -19,13 +19,15 @@ The goal of this project is to provide a helpful style guide adherance checker.
    ```sh
    git clone git@github.com:npentrel/vale-mongodb.git
    ```
-3. Inside a folder that contains docs, create a symbolic link to the
-   `vale` folder and to the `vale-check` script:
+3. Inside a folder that contains docs, create a symbolic link to the `vale` folder, the `.vale.ini` file and to the `vale-check` script:
+
    ```sh
-   ln -s vale /path/to/docs/folder/
-   ln -s vale-check /path/to/docs/folder/
-   # example: ln -s vale /Users/naomi/coding/docs/
-   # example: ln -s vale-check /Users/naomi/coding/docs/
+   ln -s $(pwd)/vale /path/to/docs/folder/
+   ln -s $(pwd)/.vale.ini /path/to/docs/folder/
+   ln -s $(pwd)/vale-check /path/to/docs/folder/
+   # example: ln -s $(pwd)/vale /Users/naomi/coding/docs/
+   # example: ln -s $(pwd)/.vale.ini /Users/naomi/coding/docs/
+   # example: ln -s $(pwd)/vale-check /Users/naomi/coding/docs/
    ```
 4. To ensure these symlinks do not accidentally get added to git add run:
    ```sh
