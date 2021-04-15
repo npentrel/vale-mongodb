@@ -1,3 +1,5 @@
+# Based on: https://github.com/errata-ai/Microsoft/blob/master/Microsoft/Passive.yml
+
 extends: existence
 link: 'https://docs.mongodb.com/meta/style-guide/style/voice-and-tone/'
 message: "In general, use active voice instead of passive voice ('%s')

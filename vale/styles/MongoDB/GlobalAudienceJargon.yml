@@ -13,6 +13,7 @@ swap:
   cache: place in cache
   debug: resolve
   dropped: discontinued
+  dummy: placeholder, sample, fake
   execute: run
   fire up: start
   freeze: stop responding
@@ -23,6 +24,6 @@ swap:
   kill: cancel, stop, end, terminate
   launch: start
   ping: contact, alert
-  sanity check: test, evaluate
+  sanity (?:check|test): test, evaluate
   spin up: create
   throw: generate

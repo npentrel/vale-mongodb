@@ -1,3 +1,5 @@
+# Based on: https://github.com/errata-ai/Google/blob/master/Google/AMPM.yml
+
 extends: existence
 message: Use uppercase letters for abbreviations of ante meridiem (AM)
          and post meridiem (PM). Separate these abbreviations from the time with

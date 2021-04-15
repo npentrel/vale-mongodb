@@ -1,3 +1,4 @@
+# Based on: https://github.com/errata-ai/Microsoft/blob/master/Microsoft/Dashes.yml
 extends: existence
 message: "Remove whitespace around '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/style/punctuation/#dashes'
