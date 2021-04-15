@@ -1,0 +1,11 @@
+extends: existence
+message: "Avoid using the antecedent '%s' at the beginning of sentences or clauses."
+link: 'https://docs.mongodb.com/meta/style-guide/writing/use-pronouns-carefully/'
+level: suggestion
+ignorecase: false
+nonword: true
+tokens:
+  - '(\sIt is)'
+  - '(\sThis)'
+  - '(\sThere (is|are))'
+  - '(\sThat)'

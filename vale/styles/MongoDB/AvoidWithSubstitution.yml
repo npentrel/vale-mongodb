@@ -2,11 +2,10 @@ extends: substitution
 message: "Use '%s' instead of '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/terminology/alphabetical-terms/'
 level: suggestion
-ignorecase: false
+ignorecase: true
 action:
   name: replace
 swap:
-  abort: stop, exit, cancel, or end
   access: see, edit, find, use, or view
   all caps: uppercase
   appendices: appendixes
@@ -17,9 +16,7 @@ swap:
   at-scale: at scale
   backward slash: backslash
   backward: backwards
-  bad: serious
   be sure: ensure or verify
-  blacklist(?:ed|ing)?: denylist
   boolean: Boolean
   bottom left: lower left
   bottom right: lower right
@@ -37,14 +34,12 @@ swap:
   collocation: colocation
   comprise: consist of/ include/ contain
   computer machine: host
-  damage: affect
   data base: database
   data center: region
   deinstall: uninstall
   deselect: clear
   desire: want
   desired: wanted, appropriate, required
-  destroy: remove, delete
   different than: different from
   do: perform
   double click: double-click
@@ -57,9 +52,7 @@ swap:
   e-commerce: ecommerce
   e-mail: email
   ethernet: Ethernet
-  fail to: unable to
   FAQs: FAQ
-  fatal: serious
   field: box
   for instance: for example
   forward slash: slash
@@ -76,14 +69,11 @@ swap:
   keep in mind: remember/consider/-
   kick off: start
   kicks off: starts
-  kill: cancel, stop, end, terminate
-  launch: start
   like: such as
   logfile: log file
   lower-case: lowercase
   lower-case: lowercase
   make sure: ensure
-  master: primary, secondary, accomplish
   matrices: matrixes
   meta-data: metadata
   name space: namespace
@@ -117,7 +107,6 @@ swap:
   roadmap: road map
   scrollbar: scroll bar
   slash mark: slash
-  slave: secondary
   Spam: spam
   standalone: stand-alone
   start up: start
@@ -144,7 +133,6 @@ swap:
   user: customer
   utilization: usage
   utilize: use
-  whilelist: allowlist
   whitepaper: white paper
   wi-fi: Wi-Fi
   WiFi: Wi-Fi
@@ -153,7 +141,6 @@ swap:
   wild card: wildcard
   wish: want
   write only: write-only
-  wrong: incorrect/inconsistent
   zeroes: zeros
   "node[.]?js": Node.js
   "Post?gr?e(?:SQL)": PostgreSQL

@@ -1,0 +1,31 @@
+extends: substitution
+message: "Use '%s' instead of the metaphor '%s'."
+link: 'https://docs.mongodb.com/meta/style-guide/terminology/terms-for-global-audience/#avoid-metaphorical-terms'
+level: suggestion
+ignorecase: true
+action:
+  name: replace
+swap:
+  a handful of: a few
+  table a discussion: postpone a discussion
+  vanilla: standard
+  pitfalls: problems
+  the drawback: the disadvantage
+
+  boot: start
+  reboot: restart
+  bounce: restart
+  cache: place in cache
+  debug: resolve
+  dropped: discontinued
+  execute: run
+  fire: start
+  fire up: start
+  freeze: stop responding
+  hang: stop responding
+  ping: contact, alert
+  sanity check: test, evaluate
+  spin up: create
+  throw: generate
+  black hat: unethical
+  
