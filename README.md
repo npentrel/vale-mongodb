@@ -47,7 +47,8 @@ The goal of this project is to provide a helpful style guide adherance checker.
    echo "
    vale
    .vale.ini
-   vale-check" >> $GITIGNOREFILE
+   vale-check
+   whitespace-check" >> $GITIGNOREFILE
    ```
 
    This script checks if you already have a global git ignore file and
