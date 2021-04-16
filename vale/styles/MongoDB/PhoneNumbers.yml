@@ -1,5 +1,5 @@
 extends: existence
-message: "Use a space, not a hyphen or a dash, to separate parts of the
+message: "Use a space, not a dash or parentheses, to separate parts of the
 telephone number. Precede phone numbers with the applicable country code
 ('%s')."
 link: 'https://docs.mongodb.com/meta/style-guide/style/telephone-numbers/'
