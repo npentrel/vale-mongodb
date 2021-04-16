@@ -2,7 +2,7 @@
 
 # This checks whether you have any directives without a new line after them.
 
-NEWLINE_CHECK=$(pcregrep -nM "((\.\. .*:: .*\n( +:\w+:(\n| \w+\n))*)( *)(:.*:\x60|\w))" $@)
+NEWLINE_CHECK=$(pcregrep -nM "((\.\. .*:: .*\n( +:\w+:(\n| \w+\n))*)( *)(:.*:\x60|\w)*)" $@)
 if [ ! -z "$NEWLINE_CHECK" ]
 then
   RED='\033[0;31m'
