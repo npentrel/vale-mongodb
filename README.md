@@ -142,7 +142,7 @@ You can install LanguageTool for mac
 instructions to integrate LanguageTool with Vale-Server are [here](https://docs.errata.ai/vale-server/add-ons/languagetool).
 
 If you set up Vale for VS-Code you can point it to your vale-server
-installation to make use of the extra features.
+installation to make use of the extra features (via the extension settings).
 
 ## Repository Structure
 
