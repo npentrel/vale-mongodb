@@ -4,6 +4,7 @@ message: "Unless space is limited use either 'from 10 to 20 diagrams' or
 link: 'https://docs.mongodb.com/meta/style-guide/style/numbers/'
 ignorecase: true
 level: warning
+scope: sentence
 nonword: true
 tokens:
   - '(\b(\d{1,})–(\d{1,})\b)'

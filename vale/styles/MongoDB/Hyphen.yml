@@ -1,5 +1,5 @@
 extends: existence
-message: "Usually words with the prefix '%s' are hyphenated"
+message: "Usually words with the prefix self- ('%s') are hyphenated"
 link: https://docs.mongodb.com/meta/style-guide/terminology/alphabetical-terms/
 ignorecase: true
 level: error

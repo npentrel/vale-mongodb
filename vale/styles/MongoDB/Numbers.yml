@@ -4,6 +4,7 @@ as displayed or need to be input, are followed by a unit, or indicate
 dimensions or time."
 link: 'https://docs.mongodb.com/meta/style-guide/style/numbers/'
 ignorecase: true
+scope: sentence
 level: suggestion
 nonword: true
 tokens:

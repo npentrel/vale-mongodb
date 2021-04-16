@@ -6,7 +6,5 @@ level: suggestion
 tokens:
   - '(above(,|.))'
   - '(below(,|.))'
-  - '(earlier(,|.))'
-  - '(later(,|.))'
   - '(before(,|.))'
   - '(after(,|.))'

@@ -4,5 +4,6 @@ message: "Consider splitting this into two sentences. If you cannot '%s' should 
 link: 'https://docs.mongodb.com/meta/style-guide/style/punctuation/#colons'
 nonword: true
 level: warning
+scope: heading
 tokens:
   - ':\s[A-Z]'

@@ -5,6 +5,7 @@ user-entered or displayed value."
 link: 'https://docs.mongodb.com/meta/style-guide/style/numbers/'
 ignorecase: true
 level: suggestion
+scope: sentence
 nonword: true
 tokens:
   - '(\b\d{5,}\b)'

@@ -1,5 +1,5 @@
 extends: existence
-message: "Don’t hyphenate words that begin with the prefix '%s' unless it’s necessary to avoid confusion."
+message: "Don’t hyphenate words like '%s' unless it’s necessary to avoid confusion."
 link: https://docs.mongodb.com/meta/style-guide/terminology/alphabetical-terms/
 ignorecase: true
 level: error

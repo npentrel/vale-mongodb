@@ -142,9 +142,6 @@ swap:
   wish: want
   write only: write-only
   zeroes: zeros
-  "node[.]?js": Node.js
-  "Post?gr?e(?:SQL)": PostgreSQL
-  "java[ -]?scripts?": JavaScript
   debian: Debian
   fedora: Fedora
   homebrew: Homebrew
