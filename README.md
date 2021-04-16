@@ -68,13 +68,28 @@ The goal of this project is to provide a helpful style guide adherance checker.
 
 ## Usage
 
+See [Usage](https://github.com/errata-ai/vale/#usage) for more
+information.
+
+### Turning Rules Off
+
 To turn off a given rule open the `.vale.ini` file and set the respective variable to `NO`. Example:
 
 ```ini
 MongoDB.Abbreviations = NO
 ```
 
-See [Usage](https://github.com/errata-ai/vale/#usage) for more information.
+### Using Vale in VSCode
+
+> **NOTE**: Please follow the steps in Getting Started first!
+
+1. Install the [vale extension](https://marketplace.visualstudio.com/items?itemName=errata-ai.vale-server)
+2. Navigate to the vale extension settings:
+   * Turn on `Use CLI`
+   * Set `Lint Context` to a reasonable number like `30`
+   * Specify the absolute path to the `.vale.ini` file for `Vale CLI: Config`. The file is in the repo you cloned in `Getting Started`.
+   * Set the min alert level to `suggestion` - a lot of the rules are coded as suggestions.
+   * Specify the path to your vale installation. To find this path run `which vale` in your terminal and copy the path.
 
 ## Repository Structure
 
