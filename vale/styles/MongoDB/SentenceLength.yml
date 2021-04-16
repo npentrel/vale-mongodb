@@ -3,5 +3,5 @@ message: "Try to keep sentences short (< 25 words)."
 link: "https://docs.mongodb.com/meta/style-guide/writing/write-clear-concise-sentences-paragraphs/#restrict-sentence-length"
 scopre: sentence
 level: warning
-max: 30
+max: 25
 token: \b(\w+)\b
