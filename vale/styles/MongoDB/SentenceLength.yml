@@ -1,6 +1,7 @@
 extends: occurrence
 message: "Try to keep sentences short (< 25 words)."
 link: "https://docs.mongodb.com/meta/style-guide/writing/write-clear-concise-sentences-paragraphs/#restrict-sentence-length"
+scopre: sentence
 level: warning
-tokens:
- - '((\n|\.|!|\?) (\b\w+\b(\s|,)+){24,})'
+max: 30
+token: \b(\w+)\b
