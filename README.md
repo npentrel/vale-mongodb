@@ -101,8 +101,7 @@ The goal of this project is to provide a helpful style guide adherance checker.
 
 ## Usage
 
-See [Usage](https://github.com/errata-ai/vale/#usage) for more
-information.
+To learn how to use Vale, see [Usage](https://github.com/errata-ai/vale/#usage).
 
 ### Turning Rules Off
 
@@ -123,6 +122,7 @@ MongoDB.Abbreviations = NO
    * Specify the absolute path to the `.vale.ini` file for `Vale CLI: Config`. The file is in the repo you cloned in `Getting Started`.
    * Set the min alert level to `suggestion` - a lot of the rules are coded as suggestions.
    * Specify the path to your vale installation. To find this path run `which vale` in your terminal and copy the path.
+     This path can't include any spaces before or after the path.
 
 
 ### Using Vale-Server
@@ -132,15 +132,13 @@ After the 30 day trial period, a license for Vale server can be obtained
 to also make use of [LanguageTool's open-source grammar
 checker](https://docs.errata.ai/vale-server/add-ons/languagetool). 
 
-To install Vale Server, follow the instructions
-[here](https://docs.errata.ai/vale-server/install) and use the
-`.vale.ini` file from the repo you cloned. Swap out the path to the
+To install Vale Server, follow [these instructions](https://docs.errata.ai/vale-server/install)
+and use the `.vale.ini` file from the repo you cloned. Swap out the path to the
 styles (`StylesPath = vale/styles`) in line 4 with the absolute path to
 the file (in my case `StylesPath = /Users/naomi/coding/vale-mongodb/vale/styles`).
 
-You can install LanguageTool for mac
-[here](https://languagetool.org/download/LanguageTool-stable.zip). The
-instructions to integrate LanguageTool with Vale-Server are [here](https://docs.errata.ai/vale-server/add-ons/languagetool).
+You can [install LanguageTool for macOS](https://languagetool.org/download/LanguageTool-stable.zip).
+Follow the [instructions to integrate LanguageTool with Vale-Server](https://docs.errata.ai/vale-server/add-ons/languagetool).
 
 If you set up Vale for VS-Code you can point it to your vale-server
 installation to make use of the extra features (via the extension settings).
