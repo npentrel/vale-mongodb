@@ -17,7 +17,7 @@ The goal of this project is to provide a helpful style guide adherance checker.
    ```
 2. In the folder where you keep code, clone this repo:
    ```sh
-   git clone git@github.com:npentrel/vale-mongodb.git
+   git clone git@github.com:10gen/mongodb-vale.git
    ```
 3. Inside a folder that contains docs, create a symbolic link to the `vale` folder, the `.vale.ini` file and to the `vale-check` script:
 
