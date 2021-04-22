@@ -31,7 +31,7 @@ The goal of this project is to provide a helpful style guide adherance checker.
    # example: ln -s $(pwd)/vale-check /Users/naomi/coding/docs/
    # example: ln -s $(pwd)/whitespace-check /Users/naomi/coding/docs/
    ```
-4. To ensure these symlinks do not accidentally get added to git add run:
+4. To ensure these symlinks do not accidentally get added to git run:
    ```sh
    #!/bin/sh
    GITIGNOREFILE=$(git config --get core.excludesfile)
@@ -90,6 +90,13 @@ The goal of this project is to provide a helpful style guide adherance checker.
    ```sh
    vale /path/to/file
    ```
+   Inside the mongodb-vale repo, you can run `vale test.rst` to run vale on an
+   example file. The output should end with the following line:
+
+   ```sh
+   ✖ 1 error, 1 warning and 1 suggestion in 1 file.
+   ```
+
 7. If you want to run vale against all files that have changed since a given commit hash use the `vale-check` wrapper:
    ```sh
    ./vale-check <HASH>
@@ -98,6 +105,12 @@ The goal of this project is to provide a helpful style guide adherance checker.
    # example: ./vale-check HEAD~3
    # example: ./vale-check abc123
    ```
+
+   This will also run a whitespace check on the files.
+
+   Inside the mongodb-vale repo, you can run `./vale-check 36b93db2` to run vale on an
+   example file. You should see the same output as in step 6 with an
+   additiona note that `You missed a new line after a directive.`.
 
 ## Usage
 
@@ -130,7 +143,7 @@ MongoDB.Abbreviations = NO
 After the 30 day trial period, a license for Vale server can be obtained
 [here](https://errata.ai/vale-server/#purchase). Vale server allows you
 to also make use of [LanguageTool's open-source grammar
-checker](https://docs.errata.ai/vale-server/add-ons/languagetool). 
+checker](https://docs.errata.ai/vale-server/add-ons/languagetool).
 
 To install Vale Server, follow [these instructions](https://docs.errata.ai/vale-server/install)
 and use the `.vale.ini` file from the repo you cloned. Swap out the path to the
