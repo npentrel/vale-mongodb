@@ -19,7 +19,9 @@ The goal of this project is to provide a helpful style guide adherance checker.
    ```sh
    git clone git@github.com:10gen/mongodb-vale.git
    ```
-3. Inside a folder that contains docs, create a symbolic link to the `vale` folder, the `.vale.ini` file and to the `vale-check` script:
+3. Inside a folder that contains docs, create a symbolic link to the
+   `vale` folder, the `.vale.ini` file and to the `vale-check` and
+   `whitespace-check` script:
 
    ```sh
    ln -s $(pwd)/vale /path/to/docs/folder/
@@ -52,13 +54,14 @@ The goal of this project is to provide a helpful style guide adherance checker.
    ```
 
    This script checks if you already have a global git ignore file and
-   sets one up if you dont. It then adds the files we created symlinks
+   sets one up if you don't. It then adds the files we created symlinks
    for to your global gitignore file.
 5. Install `rst2html`. This allows vale to interpret `rst` files.
 
    You can check if you already have `rst2html` installed
    by running `which rst2html` into your terminal. If you don't have
-   rst2html installed run `pip3 install rst2html` or `pip install rst2html`.
+   rst2html installed run `pip3 install rst2html` or `pip install
+   rst2html`.
 
    Try running `which rst2html` again. If you do not get a path to the
    command as the output, try running `which rst2thml.py`. If the
@@ -79,7 +82,8 @@ The goal of this project is to provide a helpful style guide adherance checker.
    export PATH=$PATH:/usr/local/bin/
    ```
 
-   Do not proceed until you can run `which rst2html`. Installing this
+   Do not proceed until you your terminal returns a path to the
+   installed rst2html script when you run `which rst2html`. Installing this
    ensures things like codeblocks aren't checked against the style guide
    (- unfortunately this doesn't work for all codeblocks - any
    Sphinx-modifiers like `:copyable:` mean the codeblocks are not
