@@ -137,7 +137,6 @@ MongoDB.Abbreviations = NO
    * Specify the path to your vale installation. To find this path run `which vale` in your terminal and copy the path.
      This path can't include any spaces before or after the path.
 
-
 ### Using Vale-Server
 
 After the 30 day trial period, a license for Vale server can be obtained
@@ -155,6 +154,26 @@ Follow the [instructions to integrate LanguageTool with Vale-Server](https://doc
 
 If you set up Vale for VS-Code you can point it to your vale-server
 installation to make use of the extra features (via the extension settings).
+
+### Using LanguageTool
+
+While not documented it is possible to use the LanguageTool extension
+with the Vale CLI version. If you want to do this add
+`LanguageTool` to your styles and a `ProcessTimeout` - both inside yor
+`.vale.ini` file.
+
+```ini
+ProcessTimeout = 5
+
+# Specify how to test a particular type of files
+[*.{rst,txt}]
+BasedOnStyles = MongoDB, write-good, vale, proselint, LanguageTool
+```
+
+You will need to run LanguageTool on port 8081. If you have followed the
+instructions to install Vale Server you can change the code there and
+click `Apply & Restart`. If you are encountering issues try running vale
+on the commandline.
 
 ## Repository Structure
 
