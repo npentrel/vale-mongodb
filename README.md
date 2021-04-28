@@ -141,6 +141,15 @@ MongoDB.Abbreviations = NO
    * Specify the path to your vale installation. To find this path run `which vale` in your terminal and copy the path.
      This path can't include any spaces before or after the path.
 
+If you cannot use the VSCode UI to configure vale you will need to add
+these settings to your settings.json:
+```json
+    "vale.server.lintContext": 40,
+    "vale.valeCLI.config": "/path/to/your/.vale.ini",
+    "vale.valeCLI.minAlertLevel": "suggestion",
+    "vale.valeCLI.path": "/usr/local/bin/vale",
+```
+
 ### Using Vale-Server
 
 After the 30 day trial period, a license for Vale server can be obtained
