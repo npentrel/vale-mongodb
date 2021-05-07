@@ -8,6 +8,110 @@ The goal of this project is to provide a helpful style guide adherance checker.
 
 ## Getting Started
 
+The following will install vale globally. If you would like to configure
+each repo individually scroll down to the Per Repo installation. You
+only need to complete either the Global or the Per Repo Installation.
+### Global Installation [Recommended]
+
+> :exclamation: MongoDB requires Vale >= **1.0.0**. :exclamation:
+
+1. Install `vale`. If you do not have `brew` installed follow [these
+   installation instructions](https://docs.errata.ai/vale/install).
+   ```sh
+   brew install vale
+   ```
+2. In the folder where you keep code, clone this repo:
+   ```sh
+   git clone git@github.com:10gen/mongodb-vale.git
+   ```
+3. Run the following and copy the output.
+   ```sh
+   cd mongodb-vale
+   pwd
+   ```
+4. Depending on your chosen shell, open up your `~/.bashrc` or
+   `~/.zshrc` file and append the following lines swapping out VALEDIR
+   for the output you received in the previous step:
+   ```sh
+   export PATH=$PATH:VALEDIR/bin
+   alias vale="vale --config VALEDIR/.vale.ini"
+   # Example of both
+   # export PATH=$PATH:/Users/naomi/coding/vale-mongodb/bin
+   # alias vale="vale --config /Users/naomi/coding/vale-mongodb/.vale.ini"
+   ```
+5. In the `monodb-vale` folder open up the `vale-check` script inside
+   the `bin` folder and replace VALEDIR with the output you received in
+   step 3.
+
+   Example file:
+   ```sh
+   #! /bin/bash
+
+   vale --config /Users/naomi/coding/vale-mongodb/.vale.ini $(git diff --diff-filter=d --name-only $1)
+   whitespace-check $(git diff --diff-filter=d --name-only $1)
+   ```
+
+6. Install `rst2html`. This allows vale to interpret `rst` files.
+
+   You can check if you already have `rst2html` installed
+   by running `which rst2html` into your terminal. If you don't have
+   rst2html installed run `pip3 install rst2html` or `pip install
+   rst2html`.
+
+   Try running `which rst2html` again. If you do not get a path to the
+   command as the output, try running `which rst2thml.py`. If the
+   second command worked, create a symlink for `rst2html.py`:
+   ```sh
+   sudo ln -s rst2html.py /usr/local/bin/rst2html
+   # you need to enter your password to confirm this
+   ```
+
+   Again try running `which rst2html`. If it doesn't work (or if `which
+   rst2html.py` also didn't work for you), you need to add the folder
+   that contains `rst2html` to your PATH. Open up either your `~/.bashrc`
+   or `~/.zshrc` file (depending on what you use) and add the following
+   lines at the bottom of the file, **swapping out the `/usr/local/bin/`
+   with the path to your `rst2html` file**:
+   ```sh
+   # Append path to rst2html for vale
+   export PATH=$PATH:/usr/local/bin/
+   ```
+
+   Do not proceed until you your terminal returns a path to the
+   installed rst2html script when you run `which rst2html`. Installing this
+   ensures things like codeblocks aren't checked against the style guide
+   (- unfortunately this doesn't work for all codeblocks - any
+   Sphinx-modifiers like `:copyable:` mean the codeblocks are not
+   ignored - if this bothers you we'll need to see if we can get budget
+   to pay for `vale-server` which would allow us to integrate with Sphinx).
+
+6. To run `vale` against a file use:
+   ```sh
+   vale /path/to/file
+   ```
+   Inside the mongodb-vale repo, you can run `vale test.rst` to run vale on an
+   example file. The output should end with the following line:
+
+   ```sh
+   ✖ 1 error, 1 warning and 1 suggestion in 1 file.
+   ```
+
+7. If you want to run vale against all files that have changed since a given commit hash use the `vale-check` wrapper:
+   ```sh
+   vale-check <HASH>
+   # example: vale-check
+   # example: vale-check HEAD
+   # example: vale-check HEAD~3
+   # example: vale-check abc123
+   ```
+
+   This will also run a whitespace check on the files.
+
+   Inside the mongodb-vale repo, you can run `vale-check 36b93db2` to run vale on an
+   example file. You should see the same output as in step 6 with an
+   additiona note that `You missed a new line after a directive.`.
+### Per Repo Installation
+
 > :exclamation: MongoDB requires Vale >= **1.0.0**. :exclamation:
 
 1. Install `vale`. If you do not have `brew` installed follow [these

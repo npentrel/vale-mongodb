@@ -1,4 +1,0 @@
-#! /bin/bash
-
-vale $(git diff --diff-filter=d --name-only $1)
-./whitespace-check $(git diff --diff-filter=d --name-only $1)

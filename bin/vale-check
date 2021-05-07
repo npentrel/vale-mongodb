@@ -1,0 +1,4 @@
+#! /bin/bash
+
+vale --config VALEDIR/.vale.ini $(git diff --diff-filter=d --name-only $1)
+whitespace-check $(git diff --diff-filter=d --name-only $1)
