@@ -1,31 +1,16 @@
 extends: substitution
-message: "Feel free to use '%s' instead of '%s', unless you mean to
-emphasize the negative."
+message: "Feel free to use '%s' instead of '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/style/contractions/'
 level: suggestion
 ignorecase: true
 action:
   name: replace
 swap:
-  are not: aren't
-  cannot: can't
-  did not: didn't
-  does not: doesn't
-  do not: don't
-  is not: isn't
-  was not: wasn't
-  were not: weren't
-  will not: won't
-  would not: wouldn't
-  could not: couldn't
-  has not: hasn't
-  have not: haven't
   it is: it's
   that is: that's
   there is: there's
   they are: they're
   you are: you're
-  should not: shouldn't
   that is: that's
   we are: we're
   we have: we've
