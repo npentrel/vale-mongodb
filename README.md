@@ -51,7 +51,9 @@ only need to complete either the Global or the Per Repo Installation.
    whitespace-check $(git diff --diff-filter=d --name-only $1)
    ```
 
-6. Install `rst2html`. This allows vale to interpret `rst` files.
+6. Run `source ~/.bashrc` or `source ~/.zshrc`. Or restart your terminal.
+
+7. Install `rst2html`. This allows vale to interpret `rst` files.
 
    You can check if you already have `rst2html` installed
    by running `which rst2html` into your terminal. If you don't have
@@ -83,9 +85,10 @@ only need to complete either the Global or the Per Repo Installation.
    (- unfortunately this doesn't work for all codeblocks - any
    Sphinx-modifiers like `:copyable:` mean the codeblocks are not
    ignored - if this bothers you we'll need to see if we can get budget
-   to pay for `vale-server` which would allow us to integrate with Sphinx).
+   to pay for `vale-server` which would allow us to integrate with
+   Sphinx).
 
-6. To run `vale` against a file use:
+8. To run `vale` against a file use:
    ```sh
    vale /path/to/file
    ```
