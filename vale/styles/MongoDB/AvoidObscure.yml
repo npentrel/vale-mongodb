@@ -6,10 +6,10 @@ ignorecase: true
 action:
   name: replace
 swap:
-  '\b(?:eg|e\.g\.)[\s,]': for example, such as
+  '(?:eg|e\.g\.)[\s,]': for example, such as
   etc: and so on
-  '\b(?:ie|i\.e\.)[\s,]': that is
+  '(?:ie|i\.e\.)[\s,]': that is
   as per: according to, by way of
   via: through, by
-  '\b(?:vs\.)[\s,]': versus
+  '(?:vs\.)[\s,]': versus
   ergo: therefore
