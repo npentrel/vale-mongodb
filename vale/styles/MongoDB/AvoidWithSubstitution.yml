@@ -1,5 +1,5 @@
 extends: substitution
-message: "Use '%s' instead of '%s'."
+message: "Consider if '%s' makes sense instead of '%s'."
 link: 'https://docs.mongodb.com/meta/style-guide/terminology/alphabetical-terms/'
 level: suggestion
 ignorecase: true
@@ -129,7 +129,6 @@ swap:
   upper-case: uppercase
   uptodate: up-to-date
   useable: usable
-  user: customer
   utilization: usage
   utilize: use
   whitepaper: white paper

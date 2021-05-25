@@ -1,17 +1,6 @@
 #!/bin/sh
 
-# This checks whether you have any directives without a new line after them.
-
-NEWLINE_CHECK=$(pcregrep -nM "((\.\. .*::.*\n( +:\w+:(\n| \w+\n))*)( *)(:.*:\x60|\w))" $@)
-if [ ! -z "$NEWLINE_CHECK" ]
-then
-  RED='\033[0;31m'
-  NC='\033[0m' # No Color
-  PURPLE='\033[0;35m'
-  echo "${PURPLE}----------------------------NEWLINE DIRECTIVE CHECKS----------------------------"
-  echo "${RED}Error: ${NC}You missed a new line after a directive."
-  echo "$NEWLINE_CHECK"
-fi
+RC=0
 
 # This checks for any trailing whitespace.
 
@@ -24,4 +13,12 @@ then
   echo "${PURPLE}---------------------------TRAILING WHITESPACE CHECKS---------------------------"
   echo "${YELLOW}Warning: ${NC}Please remove trailing whitespace."
   echo "$TRAILING_WHITESPACE"
+  RC=1
+fi
+
+if [ "$RC" != 0 ]
+then
+  exit 1
+else
+  exit 0
 fi
